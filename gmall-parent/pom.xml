@@ -36,6 +36,11 @@
         <dubbo.version>2.6.0</dubbo.version>
         <zkclient.version>0.10</zkclient.version>
 
+        <jjwt.version>0.9.0</jjwt.version>
+
+
+        <maven.test.skip>true</maven.test.skip>
+
     </properties>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -165,6 +170,13 @@
                 <groupId>com.gitee.reger</groupId>
                 <artifactId>spring-boot-starter-dubbo</artifactId>
                 <version>${dubbo-starter.version}</version>
+            </dependency>
+
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
             </dependency>
 
 
